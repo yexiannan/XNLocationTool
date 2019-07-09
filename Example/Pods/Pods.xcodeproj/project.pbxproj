@@ -1,0 +1,1138 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054ACA739F7A547E74F453F4BC00D9E9 /* XNLocationTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84D30241FA97AF74F0F7790AD0EA49 /* XNLocationTool-dummy.m */; };
+		0D5404194A8757272995CE3AD73184A3 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C6B69D859A510178BDFDB5CEA9A304 /* FMDB.framework */; };
+		0F985D13FD467B2C1BA82E6A6ECD6122 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E173EA81E2FF09192C1354B73CCF50C3 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		189EDA9E61D93E9F777A053A87DF8688 /* XNLocationTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70491040C0DE1C5A8FA0C9378C66C4FE /* XNLocationTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241CB60C7AAC9BD6568CFBDE28042A1B /* XNLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9223B94012ADFBB26FC511449894CE /* XNLocationTool.m */; };
+		28018335FC98D2CCD86D6DB1512A147D /* XNLocationTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3D02EF425E88BD0544AC281E9D889A4 /* XNLocationTool.bundle */; };
+		293F099048EFE7A4F2714DBEF861FE3F /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BF545286574ADB3F373E98036A953B9 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C4895DE5D66DCD24858F7EFAFFB6A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B8CA3808B7CE3232517EF4120A873C /* Foundation.framework */; };
+		4D0438BA6C02E2CEA24F2D044EA63E51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B8CA3808B7CE3232517EF4120A873C /* Foundation.framework */; };
+		634B9A7770EC79A1CC392A6B733A054A /* Pods-XNLocationTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8546F16C49BF81F9341679CEFB11A102 /* Pods-XNLocationTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		660CED428AD469299DFB54F4232E3A63 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F1D770BBCF81B519B7EA8FD544941C /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EA99DC2F76C3B925182E78E9A14F397 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B8CA3808B7CE3232517EF4120A873C /* Foundation.framework */; };
+		817B7C6FD5CC23656D654411E6E196BB /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF48738AEE86CF909EB9645CC1256F /* FMDB-dummy.m */; };
+		8181FCF7C71982747FBE961FA5DEACB7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF768B344F6F590EB3F801121B95EC /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		83FBCF3291B58A558AE17366AB441ACC /* XNLocationTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7B1D193E0F3B8D5779447CE90753AF /* XNLocationTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		862B322F326D94136510852AE2A92A55 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B57CDFAEF1266F62D4A291DC7B9D /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8BB1B21B45ECB6F17481A4D4F2A1FDF7 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2C5B1A7AD088F54DF9ADA31E4D1024 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BBD696E9F40D31BC54196B351F06B6E /* Pods-XNLocationTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA922EA24F85E132533982DE8D4A7B /* Pods-XNLocationTool_Tests-dummy.m */; };
+		A0418149CCFF3411750A6F76A92683F8 /* lianlianche.db in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F61535103453AE64C13D4109FE562 /* lianlianche.db */; };
+		BA879015C13733CE8F001FF7B40650C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70205FC995EE2A17BA9CA002ED41962C /* CoreLocation.framework */; };
+		BDD7F420531BE3CE1D9AC5AF37281D89 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC1027C2866B067755F3F6D949F982 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CCAE87B84DEB88C0D1E1567A0B95BE02 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC5E47258BD77AC547A4276778F1D5D /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0BB56A789E6EA50F07DB5D893D757B7 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEC16D66C23A31E2709B1B944E2EDA0 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8FEE863B2007BB0D5CCE43680A2BD23 /* Pods-XNLocationTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E5AE7C9FAA329DA3A75719E72CD67 /* Pods-XNLocationTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA33E59BF7692623E6496F9C07443FA4 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F2750A0CD5EDD8F75CF0C07E8CD8CD8C /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E01FE4547B2044AF85690199B2562D23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B8CA3808B7CE3232517EF4120A873C /* Foundation.framework */; };
+		E9EA56BAC5129C3A15340AEB2E7FD314 /* Pods-XNLocationTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D21289334DE63899088C52BD4B3E73 /* Pods-XNLocationTool_Example-dummy.m */; };
+		EC796B92E3E0CFCE50C491BBA6A9ADC8 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B8BDA5F2528D6BA445FE29FFEC9976 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F27F7CC6A7BFBFBA4C5657D0CDA4A972 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A403596C092A189B80E9351779DEF0A /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17A2A698C2A5324D7253B1926E321465 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 563975CD3F733CD92750CDFEB1459FCD;
+			remoteInfo = "Pods-XNLocationTool_Example";
+		};
+		9B9DF32A128910A6F076198D9E282AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6971B3EDE5D7E145CD39892E13B6FB3;
+			remoteInfo = "XNLocationTool-XNLocationTool";
+		};
+		BAED4984209B433782906E6B63719D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E2D5944252314B060C086BA8AA9DA85;
+			remoteInfo = XNLocationTool;
+		};
+		C46E6E05B1F6E182B54934943DD03639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
+		CFAFF6A2594E0A49CDCA61361CCABC9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029F47CCEE5A0AAA15612D9850A24F94 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		11073F3E4EA350BACDC7E9116B742B2B /* Pods-XNLocationTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XNLocationTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1414600AD2061270AE2F7ACD80A49A09 /* Pods-XNLocationTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XNLocationTool_Tests.modulemap"; sourceTree = "<group>"; };
+		1A1F61535103453AE64C13D4109FE562 /* lianlianche.db */ = {isa = PBXFileReference; includeInIndex = 1; name = lianlianche.db; path = XNLocationTool/Assets/lianlianche.db; sourceTree = "<group>"; };
+		1E7B1D193E0F3B8D5779447CE90753AF /* XNLocationTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XNLocationTool.h; path = XNLocationTool/Classes/XNLocationTool.h; sourceTree = "<group>"; };
+		244998FA62E9CA971C9C8C51ED474D25 /* Pods-XNLocationTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XNLocationTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2B8F1DD8F195F8BD6757E039138B92D9 /* Pods-XNLocationTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XNLocationTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2C84D30241FA97AF74F0F7790AD0EA49 /* XNLocationTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XNLocationTool-dummy.m"; sourceTree = "<group>"; };
+		2ECC1027C2866B067755F3F6D949F982 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		36BF48738AEE86CF909EB9645CC1256F /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		3765437AC1538003589142E20AD92494 /* Pods-XNLocationTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XNLocationTool_Example.modulemap"; sourceTree = "<group>"; };
+		3C4BE59E08CD2A27EA0E05B074F7D67A /* XNLocationTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XNLocationTool.xcconfig; sourceTree = "<group>"; };
+		3D890508565A285D7B1EEF994803D2C1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3F5E9BCEF8B2A062C716A73292CFCC83 /* Pods-XNLocationTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XNLocationTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		41B8BDA5F2528D6BA445FE29FFEC9976 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		48C23FF69A4E4C997589FC1276678ADC /* Pods-XNLocationTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XNLocationTool_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4AEC16D66C23A31E2709B1B944E2EDA0 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		5C9223B94012ADFBB26FC511449894CE /* XNLocationTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XNLocationTool.m; path = XNLocationTool/Classes/XNLocationTool.m; sourceTree = "<group>"; };
+		5E9118ABC27B0301ECE3F9CBDC688DDC /* Pods-XNLocationTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XNLocationTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EEF768B344F6F590EB3F801121B95EC /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		68F1D770BBCF81B519B7EA8FD544941C /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		70205FC995EE2A17BA9CA002ED41962C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		70491040C0DE1C5A8FA0C9378C66C4FE /* XNLocationTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XNLocationTool-umbrella.h"; sourceTree = "<group>"; };
+		7109ED3313ED538148DC6BEA7354A6A4 /* XNLocationTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XNLocationTool-prefix.pch"; sourceTree = "<group>"; };
+		71A1B57CDFAEF1266F62D4A291DC7B9D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		72A4F0C1BAD4E0128EC5C703D0C861E8 /* XNLocationTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XNLocationTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		72C6B69D859A510178BDFDB5CEA9A304 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC5E47258BD77AC547A4276778F1D5D /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		7BF545286574ADB3F373E98036A953B9 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		7C49A570CEF8F7EE995E0E7243EF6D1A /* XNLocationTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XNLocationTool.modulemap; sourceTree = "<group>"; };
+		80649119F37FC627FE97C49E8A0EBB79 /* Pods-XNLocationTool_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XNLocationTool_Tests-Info.plist"; sourceTree = "<group>"; };
+		8416926756EAC67F76D02F00400C895B /* ResourceBundle-XNLocationTool-XNLocationTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XNLocationTool-XNLocationTool-Info.plist"; sourceTree = "<group>"; };
+		8546F16C49BF81F9341679CEFB11A102 /* Pods-XNLocationTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XNLocationTool_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8A2E08CEC5E83B42F306A9A75036E051 /* Pods-XNLocationTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XNLocationTool_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8BF14EA62BE371202295E8C08CCC1207 /* FMDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMDB-Info.plist"; sourceTree = "<group>"; };
+		8D2C5B1A7AD088F54DF9ADA31E4D1024 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		9A403596C092A189B80E9351779DEF0A /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D49184DDA04D2ADF0001F705225E29 /* Pods-XNLocationTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XNLocationTool_Example-Info.plist"; sourceTree = "<group>"; };
+		A4EF1AB57E1694852611025996270220 /* Pods-XNLocationTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XNLocationTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3D02EF425E88BD0544AC281E9D889A4 /* XNLocationTool.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XNLocationTool.bundle; path = "XNLocationTool-XNLocationTool.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F20F8765603EC04BD298DCE8CAE37C /* Pods_XNLocationTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XNLocationTool_Example.framework; path = "Pods-XNLocationTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B95786BC54435BE627F3491075685C39 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B9B8CA3808B7CE3232517EF4120A873C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BB6E5AE7C9FAA329DA3A75719E72CD67 /* Pods-XNLocationTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XNLocationTool_Example-umbrella.h"; sourceTree = "<group>"; };
+		C6A97531656805D3F152A15FBFEFB728 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		C7D21289334DE63899088C52BD4B3E73 /* Pods-XNLocationTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XNLocationTool_Example-dummy.m"; sourceTree = "<group>"; };
+		D12ACAC83CE97EF9E2447A67A2237356 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
+		D53B0A1FB814606B86F0F419C730E144 /* Pods_XNLocationTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XNLocationTool_Tests.framework; path = "Pods-XNLocationTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E173EA81E2FF09192C1354B73CCF50C3 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		E253B7578D44446D5806AC1901CBDD45 /* XNLocationTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XNLocationTool-Info.plist"; sourceTree = "<group>"; };
+		EAAA922EA24F85E132533982DE8D4A7B /* Pods-XNLocationTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XNLocationTool_Tests-dummy.m"; sourceTree = "<group>"; };
+		F2750A0CD5EDD8F75CF0C07E8CD8CD8C /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		F67650A1CA7AAD5145C257B66D641CF7 /* XNLocationTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XNLocationTool.framework; path = XNLocationTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABCBC9E837333AE767C640FD30D6099 /* Pods-XNLocationTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XNLocationTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21762AA36443CF93C549D05A5A062684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4895DE5D66DCD24858F7EFAFFB6A2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248D0F1D3632D9E78EF7280B52A115F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01FE4547B2044AF85690199B2562D23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC19A2C2DA7BE15A3AC7F83C67D4D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CAC5921139122DD0E301A45A82E666B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA879015C13733CE8F001FF7B40650C5 /* CoreLocation.framework in Frameworks */,
+				0D5404194A8757272995CE3AD73184A3 /* FMDB.framework in Frameworks */,
+				4D0438BA6C02E2CEA24F2D044EA63E51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7027CB7D7CB7C116E8D038FFD8A756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA99DC2F76C3B925182E78E9A14F397 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18D09102D0F714E4C238606728D284CB /* Pods-XNLocationTool_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3765437AC1538003589142E20AD92494 /* Pods-XNLocationTool_Example.modulemap */,
+				11073F3E4EA350BACDC7E9116B742B2B /* Pods-XNLocationTool_Example-acknowledgements.markdown */,
+				244998FA62E9CA971C9C8C51ED474D25 /* Pods-XNLocationTool_Example-acknowledgements.plist */,
+				C7D21289334DE63899088C52BD4B3E73 /* Pods-XNLocationTool_Example-dummy.m */,
+				48C23FF69A4E4C997589FC1276678ADC /* Pods-XNLocationTool_Example-frameworks.sh */,
+				A4D49184DDA04D2ADF0001F705225E29 /* Pods-XNLocationTool_Example-Info.plist */,
+				BB6E5AE7C9FAA329DA3A75719E72CD67 /* Pods-XNLocationTool_Example-umbrella.h */,
+				FABCBC9E837333AE767C640FD30D6099 /* Pods-XNLocationTool_Example.debug.xcconfig */,
+				8A2E08CEC5E83B42F306A9A75036E051 /* Pods-XNLocationTool_Example.release.xcconfig */,
+			);
+			name = "Pods-XNLocationTool_Example";
+			path = "Target Support Files/Pods-XNLocationTool_Example";
+			sourceTree = "<group>";
+		};
+		224EB198F2A024DBA4D91638256EC04A /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				68F1D770BBCF81B519B7EA8FD544941C /* FMDatabase.h */,
+				5EEF768B344F6F590EB3F801121B95EC /* FMDatabase.m */,
+				41B8BDA5F2528D6BA445FE29FFEC9976 /* FMDatabaseAdditions.h */,
+				71A1B57CDFAEF1266F62D4A291DC7B9D /* FMDatabaseAdditions.m */,
+				7BC5E47258BD77AC547A4276778F1D5D /* FMDatabasePool.h */,
+				E173EA81E2FF09192C1354B73CCF50C3 /* FMDatabasePool.m */,
+				7BF545286574ADB3F373E98036A953B9 /* FMDatabaseQueue.h */,
+				2ECC1027C2866B067755F3F6D949F982 /* FMDatabaseQueue.m */,
+				4AEC16D66C23A31E2709B1B944E2EDA0 /* FMDB.h */,
+				F2750A0CD5EDD8F75CF0C07E8CD8CD8C /* FMResultSet.h */,
+				9A403596C092A189B80E9351779DEF0A /* FMResultSet.m */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		33192FB489A773087CF4DF7DFBB63F76 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EEBBB5482D273AB36628A04A583C34C /* XNLocationTool */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		33953E24337CD611F3D7E42323D58E1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */,
+				B8F20F8765603EC04BD298DCE8CAE37C /* Pods_XNLocationTool_Example.framework */,
+				D53B0A1FB814606B86F0F419C730E144 /* Pods_XNLocationTool_Tests.framework */,
+				B3D02EF425E88BD0544AC281E9D889A4 /* XNLocationTool.bundle */,
+				F67650A1CA7AAD5145C257B66D641CF7 /* XNLocationTool.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EEBBB5482D273AB36628A04A583C34C /* XNLocationTool */ = {
+			isa = PBXGroup;
+			children = (
+				1E7B1D193E0F3B8D5779447CE90753AF /* XNLocationTool.h */,
+				5C9223B94012ADFBB26FC511449894CE /* XNLocationTool.m */,
+				7721A38D499BC0C10C35CF168B0427A4 /* Pod */,
+				84F9D034A591CF2FF498411A68AD87CA /* Resources */,
+				5E82B57A4A82202A9A124F025933924E /* Support Files */,
+			);
+			name = XNLocationTool;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		59ABEB310529AD623E91215F00AFE808 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D12ACAC83CE97EF9E2447A67A2237356 /* FMDB.modulemap */,
+				029F47CCEE5A0AAA15612D9850A24F94 /* FMDB.xcconfig */,
+				36BF48738AEE86CF909EB9645CC1256F /* FMDB-dummy.m */,
+				8BF14EA62BE371202295E8C08CCC1207 /* FMDB-Info.plist */,
+				C6A97531656805D3F152A15FBFEFB728 /* FMDB-prefix.pch */,
+				8D2C5B1A7AD088F54DF9ADA31E4D1024 /* FMDB-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		5E82B57A4A82202A9A124F025933924E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8416926756EAC67F76D02F00400C895B /* ResourceBundle-XNLocationTool-XNLocationTool-Info.plist */,
+				7C49A570CEF8F7EE995E0E7243EF6D1A /* XNLocationTool.modulemap */,
+				3C4BE59E08CD2A27EA0E05B074F7D67A /* XNLocationTool.xcconfig */,
+				2C84D30241FA97AF74F0F7790AD0EA49 /* XNLocationTool-dummy.m */,
+				E253B7578D44446D5806AC1901CBDD45 /* XNLocationTool-Info.plist */,
+				7109ED3313ED538148DC6BEA7354A6A4 /* XNLocationTool-prefix.pch */,
+				70491040C0DE1C5A8FA0C9378C66C4FE /* XNLocationTool-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XNLocationTool";
+			sourceTree = "<group>";
+		};
+		68DB21AE5492FC581291330CF6E902BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4612C3A0C0F061375C39B28E771BD4D /* FMDB */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D54C998B78DC905C8AA2212D25B2EC7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18D09102D0F714E4C238606728D284CB /* Pods-XNLocationTool_Example */,
+				DF35ADF5BD2087501B249075A42F71A3 /* Pods-XNLocationTool_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7721A38D499BC0C10C35CF168B0427A4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3D890508565A285D7B1EEF994803D2C1 /* LICENSE */,
+				B95786BC54435BE627F3491075685C39 /* README.md */,
+				72A4F0C1BAD4E0128EC5C703D0C861E8 /* XNLocationTool.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		84F9D034A591CF2FF498411A68AD87CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A1F61535103453AE64C13D4109FE562 /* lianlianche.db */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		90782C1DAC8750FE617B0521A2F758C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72C6B69D859A510178BDFDB5CEA9A304 /* FMDB.framework */,
+				B7D2701A8BC9EF5235F1C7D44A02733A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7D2701A8BC9EF5235F1C7D44A02733A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				70205FC995EE2A17BA9CA002ED41962C /* CoreLocation.framework */,
+				B9B8CA3808B7CE3232517EF4120A873C /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4612C3A0C0F061375C39B28E771BD4D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				224EB198F2A024DBA4D91638256EC04A /* standard */,
+				59ABEB310529AD623E91215F00AFE808 /* Support Files */,
+			);
+			name = FMDB;
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				33192FB489A773087CF4DF7DFBB63F76 /* Development Pods */,
+				90782C1DAC8750FE617B0521A2F758C7 /* Frameworks */,
+				68DB21AE5492FC581291330CF6E902BA /* Pods */,
+				33953E24337CD611F3D7E42323D58E1F /* Products */,
+				6D54C998B78DC905C8AA2212D25B2EC7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DF35ADF5BD2087501B249075A42F71A3 /* Pods-XNLocationTool_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1414600AD2061270AE2F7ACD80A49A09 /* Pods-XNLocationTool_Tests.modulemap */,
+				5E9118ABC27B0301ECE3F9CBDC688DDC /* Pods-XNLocationTool_Tests-acknowledgements.markdown */,
+				3F5E9BCEF8B2A062C716A73292CFCC83 /* Pods-XNLocationTool_Tests-acknowledgements.plist */,
+				EAAA922EA24F85E132533982DE8D4A7B /* Pods-XNLocationTool_Tests-dummy.m */,
+				80649119F37FC627FE97C49E8A0EBB79 /* Pods-XNLocationTool_Tests-Info.plist */,
+				8546F16C49BF81F9341679CEFB11A102 /* Pods-XNLocationTool_Tests-umbrella.h */,
+				A4EF1AB57E1694852611025996270220 /* Pods-XNLocationTool_Tests.debug.xcconfig */,
+				2B8F1DD8F195F8BD6757E039138B92D9 /* Pods-XNLocationTool_Tests.release.xcconfig */,
+			);
+			name = "Pods-XNLocationTool_Tests";
+			path = "Target Support Files/Pods-XNLocationTool_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		39A41A534A7247A6021179B8FACE3E23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FEE863B2007BB0D5CCE43680A2BD23 /* Pods-XNLocationTool_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47C7664C6D3BFF92A2AB1D425BD3A37C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660CED428AD469299DFB54F4232E3A63 /* FMDatabase.h in Headers */,
+				EC796B92E3E0CFCE50C491BBA6A9ADC8 /* FMDatabaseAdditions.h in Headers */,
+				CCAE87B84DEB88C0D1E1567A0B95BE02 /* FMDatabasePool.h in Headers */,
+				293F099048EFE7A4F2714DBEF861FE3F /* FMDatabaseQueue.h in Headers */,
+				8BB1B21B45ECB6F17481A4D4F2A1FDF7 /* FMDB-umbrella.h in Headers */,
+				D0BB56A789E6EA50F07DB5D893D757B7 /* FMDB.h in Headers */,
+				DA33E59BF7692623E6496F9C07443FA4 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4D3A81B4CB4C61B3CCAB01058025A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634B9A7770EC79A1CC392A6B733A054A /* Pods-XNLocationTool_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9F822373898EF735FD85E4052F9EC54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189EDA9E61D93E9F777A053A87DF8688 /* XNLocationTool-umbrella.h in Headers */,
+				83FBCF3291B58A558AE17366AB441ACC /* XNLocationTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		563975CD3F733CD92750CDFEB1459FCD /* Pods-XNLocationTool_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D2BC55CC3146C31FA240BACAC731D50 /* Build configuration list for PBXNativeTarget "Pods-XNLocationTool_Example" */;
+			buildPhases = (
+				39A41A534A7247A6021179B8FACE3E23 /* Headers */,
+				4E7A818CA45A6F453CA341FF286B188C /* Sources */,
+				248D0F1D3632D9E78EF7280B52A115F0 /* Frameworks */,
+				74FFED43ECE2B0E6F370A8F513688E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A819E20EDDB4961700EBC4D272DF5BA /* PBXTargetDependency */,
+				80024C7A33370DE990219E372AA1111D /* PBXTargetDependency */,
+			);
+			name = "Pods-XNLocationTool_Example";
+			productName = "Pods-XNLocationTool_Example";
+			productReference = B8F20F8765603EC04BD298DCE8CAE37C /* Pods_XNLocationTool_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E2D5944252314B060C086BA8AA9DA85 /* XNLocationTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7873FAE3365F8A860B4A581B5B66BFB /* Build configuration list for PBXNativeTarget "XNLocationTool" */;
+			buildPhases = (
+				C9F822373898EF735FD85E4052F9EC54 /* Headers */,
+				892E32F0DBB560934A909E5643DD2EE5 /* Sources */,
+				7CAC5921139122DD0E301A45A82E666B /* Frameworks */,
+				C220D1C13147E26C8D93F7862F181159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A360BCD4EF56535CCB2C48FE8EED0813 /* PBXTargetDependency */,
+				1F89FE3249CC44FB693E3B8F9F2A4E98 /* PBXTargetDependency */,
+			);
+			name = XNLocationTool;
+			productName = XNLocationTool;
+			productReference = F67650A1CA7AAD5145C257B66D641CF7 /* XNLocationTool.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8592E0E389D40AC17881400ADC67ABC0 /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54320349FAF7EBC4F27F14598AAA4511 /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				47C7664C6D3BFF92A2AB1D425BD3A37C /* Headers */,
+				CB6E125134D9191E0085EE651676E8EA /* Sources */,
+				CC7027CB7D7CB7C116E8D038FFD8A756 /* Frameworks */,
+				A31E733A9011822CBEDFB2E937BA3317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9B3D7335C4D96D775C05B43BFE52B7D /* Pods-XNLocationTool_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B3F7E7F3C712C7DD8C09753C266D19 /* Build configuration list for PBXNativeTarget "Pods-XNLocationTool_Tests" */;
+			buildPhases = (
+				5B4D3A81B4CB4C61B3CCAB01058025A4 /* Headers */,
+				25AE35280BE234B55BFA680B595C48EF /* Sources */,
+				21762AA36443CF93C549D05A5A062684 /* Frameworks */,
+				2B9AE9D072799EDBAB501D15246A0411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				914ACCA6F7705C8001B9979702DBABE5 /* PBXTargetDependency */,
+			);
+			name = "Pods-XNLocationTool_Tests";
+			productName = "Pods-XNLocationTool_Tests";
+			productReference = D53B0A1FB814606B86F0F419C730E144 /* Pods_XNLocationTool_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6971B3EDE5D7E145CD39892E13B6FB3 /* XNLocationTool-XNLocationTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4206C60E0D914BD53C82A79B4B7C192 /* Build configuration list for PBXNativeTarget "XNLocationTool-XNLocationTool" */;
+			buildPhases = (
+				F953BE89BBABD62B1E41FA8C6A2BDC3F /* Sources */,
+				3AC19A2C2DA7BE15A3AC7F83C67D4D68 /* Frameworks */,
+				B0B102B272A724EE3B2C18CDCCB89D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XNLocationTool-XNLocationTool";
+			productName = "XNLocationTool-XNLocationTool";
+			productReference = B3D02EF425E88BD0544AC281E9D889A4 /* XNLocationTool.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 33953E24337CD611F3D7E42323D58E1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8592E0E389D40AC17881400ADC67ABC0 /* FMDB */,
+				563975CD3F733CD92750CDFEB1459FCD /* Pods-XNLocationTool_Example */,
+				C9B3D7335C4D96D775C05B43BFE52B7D /* Pods-XNLocationTool_Tests */,
+				5E2D5944252314B060C086BA8AA9DA85 /* XNLocationTool */,
+				E6971B3EDE5D7E145CD39892E13B6FB3 /* XNLocationTool-XNLocationTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B9AE9D072799EDBAB501D15246A0411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74FFED43ECE2B0E6F370A8F513688E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31E733A9011822CBEDFB2E937BA3317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0B102B272A724EE3B2C18CDCCB89D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0418149CCFF3411750A6F76A92683F8 /* lianlianche.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C220D1C13147E26C8D93F7862F181159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28018335FC98D2CCD86D6DB1512A147D /* XNLocationTool.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25AE35280BE234B55BFA680B595C48EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBD696E9F40D31BC54196B351F06B6E /* Pods-XNLocationTool_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7A818CA45A6F453CA341FF286B188C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EA56BAC5129C3A15340AEB2E7FD314 /* Pods-XNLocationTool_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892E32F0DBB560934A909E5643DD2EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054ACA739F7A547E74F453F4BC00D9E9 /* XNLocationTool-dummy.m in Sources */,
+				241CB60C7AAC9BD6568CFBDE28042A1B /* XNLocationTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6E125134D9191E0085EE651676E8EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8181FCF7C71982747FBE961FA5DEACB7 /* FMDatabase.m in Sources */,
+				862B322F326D94136510852AE2A92A55 /* FMDatabaseAdditions.m in Sources */,
+				0F985D13FD467B2C1BA82E6A6ECD6122 /* FMDatabasePool.m in Sources */,
+				BDD7F420531BE3CE1D9AC5AF37281D89 /* FMDatabaseQueue.m in Sources */,
+				817B7C6FD5CC23656D654411E6E196BB /* FMDB-dummy.m in Sources */,
+				F27F7CC6A7BFBFBA4C5657D0CDA4A972 /* FMResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F953BE89BBABD62B1E41FA8C6A2BDC3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F89FE3249CC44FB693E3B8F9F2A4E98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XNLocationTool-XNLocationTool";
+			target = E6971B3EDE5D7E145CD39892E13B6FB3 /* XNLocationTool-XNLocationTool */;
+			targetProxy = 9B9DF32A128910A6F076198D9E282AF2 /* PBXContainerItemProxy */;
+		};
+		7A819E20EDDB4961700EBC4D272DF5BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = C46E6E05B1F6E182B54934943DD03639 /* PBXContainerItemProxy */;
+		};
+		80024C7A33370DE990219E372AA1111D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XNLocationTool;
+			target = 5E2D5944252314B060C086BA8AA9DA85 /* XNLocationTool */;
+			targetProxy = BAED4984209B433782906E6B63719D83 /* PBXContainerItemProxy */;
+		};
+		914ACCA6F7705C8001B9979702DBABE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XNLocationTool_Example";
+			target = 563975CD3F733CD92750CDFEB1459FCD /* Pods-XNLocationTool_Example */;
+			targetProxy = 17A2A698C2A5324D7253B1926E321465 /* PBXContainerItemProxy */;
+		};
+		A360BCD4EF56535CCB2C48FE8EED0813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = CFAFF6A2594E0A49CDCA61361CCABC9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		06C655E4E1C1279A3DDC65F6831EC740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B8F1DD8F195F8BD6757E039138B92D9 /* Pods-XNLocationTool_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XNLocationTool_Tests/Pods-XNLocationTool_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XNLocationTool_Tests/Pods-XNLocationTool_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1797C96C0829DA24749BDCAA78609914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2E08CEC5E83B42F306A9A75036E051 /* Pods-XNLocationTool_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XNLocationTool_Example/Pods-XNLocationTool_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XNLocationTool_Example/Pods-XNLocationTool_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1AF2D56950709249371C0937E1C7CC33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4BE59E08CD2A27EA0E05B074F7D67A /* XNLocationTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XNLocationTool/XNLocationTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XNLocationTool/XNLocationTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XNLocationTool/XNLocationTool.modulemap";
+				PRODUCT_MODULE_NAME = XNLocationTool;
+				PRODUCT_NAME = XNLocationTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		21F1CEF194F0FE2B800606D44E014432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4BE59E08CD2A27EA0E05B074F7D67A /* XNLocationTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XNLocationTool/XNLocationTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XNLocationTool/XNLocationTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XNLocationTool/XNLocationTool.modulemap";
+				PRODUCT_MODULE_NAME = XNLocationTool;
+				PRODUCT_NAME = XNLocationTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		377E4B840DDF01E92A9079AE00E02542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4BE59E08CD2A27EA0E05B074F7D67A /* XNLocationTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XNLocationTool";
+				INFOPLIST_FILE = "Target Support Files/XNLocationTool/ResourceBundle-XNLocationTool-XNLocationTool-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XNLocationTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7E30CA1A8F161DAD7BB54D86DB25E200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 029F47CCEE5A0AAA15612D9850A24F94 /* FMDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A4132378D1CDE2ABA64F3E340E0B647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4BE59E08CD2A27EA0E05B074F7D67A /* XNLocationTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XNLocationTool";
+				INFOPLIST_FILE = "Target Support Files/XNLocationTool/ResourceBundle-XNLocationTool-XNLocationTool-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XNLocationTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8D3E4776D47965C653C5F7304C77F6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABCBC9E837333AE767C640FD30D6099 /* Pods-XNLocationTool_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XNLocationTool_Example/Pods-XNLocationTool_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XNLocationTool_Example/Pods-XNLocationTool_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB4976BF9D723A93CECDC89FD2B26D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EF1AB57E1694852611025996270220 /* Pods-XNLocationTool_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XNLocationTool_Tests/Pods-XNLocationTool_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XNLocationTool_Tests/Pods-XNLocationTool_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FBE3B9F467BD7CEDCA46B5B9412B6CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 029F47CCEE5A0AAA15612D9850A24F94 /* FMDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D2BC55CC3146C31FA240BACAC731D50 /* Build configuration list for PBXNativeTarget "Pods-XNLocationTool_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3E4776D47965C653C5F7304C77F6AE /* Debug */,
+				1797C96C0829DA24749BDCAA78609914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54320349FAF7EBC4F27F14598AAA4511 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E30CA1A8F161DAD7BB54D86DB25E200 /* Debug */,
+				FBE3B9F467BD7CEDCA46B5B9412B6CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B3F7E7F3C712C7DD8C09753C266D19 /* Build configuration list for PBXNativeTarget "Pods-XNLocationTool_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4976BF9D723A93CECDC89FD2B26D3C /* Debug */,
+				06C655E4E1C1279A3DDC65F6831EC740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4206C60E0D914BD53C82A79B4B7C192 /* Build configuration list for PBXNativeTarget "XNLocationTool-XNLocationTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377E4B840DDF01E92A9079AE00E02542 /* Debug */,
+				8A4132378D1CDE2ABA64F3E340E0B647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7873FAE3365F8A860B4A581B5B66BFB /* Build configuration list for PBXNativeTarget "XNLocationTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F1CEF194F0FE2B800606D44E014432 /* Debug */,
+				1AF2D56950709249371C0937E1C7CC33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

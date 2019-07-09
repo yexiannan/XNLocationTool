@@ -1,0 +1,6 @@
+framework module XNLocationTool {
+  umbrella header "XNLocationTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

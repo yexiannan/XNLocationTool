@@ -1,0 +1,12 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XNLocationTool_Example' do
+  pod 'XNLocationTool', :path => '../'
+
+  target 'XNLocationTool_Tests' do
+    inherit! :search_paths
+    
+  end
+end
