@@ -16,10 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 获取当前位置信息
  */
-- (void)getLocationResult:(void (^)(double longitude, double latitude, NSString *provinceName, NSString * _Nullable provinceID, NSString * _Nullable cityName, NSString * _Nullable cityID, NSString * _Nullable areaName, NSString * _Nullable  areaID))result Error:(void (^)(NSError *error))error;
++ (void)getLocationResult:(void (^)(double longitude, double latitude, NSString *provinceName, NSString * _Nullable provinceID, NSString * _Nullable cityName, NSString * _Nullable cityID, NSString * _Nullable areaName, NSString * _Nullable  areaID))result Error:(void (^)(NSError *error))error;
 
 /**
- * 根据名称查询ID
+ * 根据Name查询ID
  */
 + (void)inquireIDWithName:(NSString *)name Result:(void (^)(NSString * _Nullable ID))result;
 /**
@@ -27,6 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)inquireNameWithID:(NSString *)ID Result:(void (^)(NSString * _Nullable Name))result;
 
+/**
+ * 根据省ID查询辖区下所有市
+ * @[@{@"ID":@"10086",@"Name":@"福建"}]
+ */
++ (void)inquireAllCityInfoWithID:(NSString *)ID Result:(void (^)(NSArray <NSDictionary <NSString *,NSString *>*>* _Nullable resultInfos))result;
 
 @end
 

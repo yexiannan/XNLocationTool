@@ -14,6 +14,9 @@ typedef void(^LocationResult)(double longitude, double latitude, NSString *provi
 
 typedef void(^LocationError)(NSError *error);
 
+typedef void(^LocationError)(NSError *error);
+
+
 @interface XNLocationTool ()<CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager* locationManager;
 @property (nonatomic, copy) LocationResult result;
@@ -47,17 +50,17 @@ typedef void(^LocationError)(NSError *error);
 }
 
 #pragma mark - 定位
-- (void)getLocationResult:(void (^)(double, double, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))result Error:(void (^)(NSError * _Nonnull))error{
++ (void)getLocationResult:(void (^)(double, double, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))result Error:(void (^)(NSError * _Nonnull))error{
+    XNLocationTool *tool = [XNLocationTool locationManager];
+    tool.result = result;
+    tool.error = error;
+    tool.locationManager.delegate = tool;
     
-    _result = result;
-    _error = error;
-    self.locationManager.delegate = self;
-    
-    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-        [self.locationManager requestWhenInUseAuthorization];
+    if ([tool.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [tool.locationManager requestWhenInUseAuthorization];
     }
     
-    [self.locationManager startUpdatingLocation];
+    [tool.locationManager startUpdatingLocation];
     
 }
 
@@ -161,5 +164,32 @@ typedef void(^LocationError)(NSError *error);
     [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireProvinceID];
 }
 
+/**
+ * 根据省ID查询辖区下所有市
+ * @[@{@"ID":@"10086",@"Name":@"福建"}]
+ */
++ (void)inquireAllCityInfoWithID:(NSString *)ID Result:(nonnull void (^)(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable))result{
+    NSBlockOperation *inquireProvinceID = [NSBlockOperation blockOperationWithBlock:^{
+        FMDatabase *db = [XNLocationTool locationManager].db;
+        [db open];
+        if (![db open]) {
+            result(nil);
+        }
+        
+        FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE parent_id = '%@' ORDER BY city_id ASC",ID]];
+        NSMutableArray <NSDictionary<NSString *,NSString *> *>*cityInfosArray = [[NSMutableArray alloc] initWithCapacity:[dbResult columnCount]];
+
+        while ([dbResult next]) {
+            NSDictionary *cityInfo = @{@"ID":[dbResult stringForColumn:@"city_id"],
+                                       @"Name":[dbResult stringForColumn:@"city_name"]};
+            [cityInfosArray addObject:cityInfo];
+        }
+        
+        result(cityInfosArray);
+        
+    }];
+    
+    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireProvinceID];
+}
 
 @end

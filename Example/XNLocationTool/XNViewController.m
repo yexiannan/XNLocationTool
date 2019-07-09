@@ -20,13 +20,23 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [[XNLocationTool locationManager] getLocationResult:^(double longitude, double latitude, NSString * _Nonnull provinceName, NSString * _Nonnull provinceID, NSString * _Nonnull cityName, NSString * _Nonnull cityID, NSString * _Nullable areaName, NSString * _Nullable areaID) {
+    [XNLocationTool getLocationResult:^(double longitude, double latitude, NSString * _Nonnull provinceName, NSString * _Nonnull provinceID, NSString * _Nonnull cityName, NSString * _Nonnull cityID, NSString * _Nullable areaName, NSString * _Nullable areaID) {
         NSLog(@"longitude = %lf, latitude = %lf, provinceName = %@, provinceID = %@, cityName = %@, cityID = %@, areaName = %@, areaID = %@,",longitude,latitude,provinceName,provinceID,cityName,cityID,areaName,areaID);
 
     } Error:^(NSError * _Nonnull error) {
         NSLog(@"error = %@",error);
     }];
-
+    
+    [XNLocationTool inquireIDWithName:@"福建" Result:^(NSString * _Nullable ID) {
+        
+        [XNLocationTool inquireAllCityInfoWithID:ID Result:^(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable resultInfos) {
+            
+            NSLog(@"-----resultInfo = %@",resultInfos);
+            
+        }];
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
