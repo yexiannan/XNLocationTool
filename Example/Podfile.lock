@@ -2,7 +2,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - XNLocationTool (0.1.1):
+  - XNLocationTool (0.1.2):
     - FMDB
 
 DEPENDENCIES:
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  XNLocationTool: 239c6526cff66b65e405576072be51156f9100a0
+  XNLocationTool: 36cec77b24ec715cd0229b1c2a9bb6e6813d231b
 
 PODFILE CHECKSUM: 4be1f982e5afed3592d62ab3e7b69b4c3c7a8821
 
