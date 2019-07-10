@@ -116,7 +116,7 @@ typedef void(^LocationError)(NSError *error);
  * 根据名称查询ID
  */
 + (void)inquireIDWithName:(NSString *)name Result:(void (^)(NSString * _Nullable))result{
-    NSBlockOperation *inquireProvinceID = [NSBlockOperation blockOperationWithBlock:^{
+    NSBlockOperation *inquireID = [NSBlockOperation blockOperationWithBlock:^{
         FMDatabase *db = [XNLocationTool locationManager].db;
         [db open];
         if (![db open]) {
@@ -135,14 +135,14 @@ typedef void(^LocationError)(NSError *error);
 
     }];
 
-    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireProvinceID];
+    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireID];
 }
 
 /**
  * 根据ID查询Name
  */
 + (void)inquireNameWithID:(NSString *)ID Result:(void (^)(NSString * _Nullable Name))result{
-    NSBlockOperation *inquireProvinceID = [NSBlockOperation blockOperationWithBlock:^{
+    NSBlockOperation *inquireName = [NSBlockOperation blockOperationWithBlock:^{
         FMDatabase *db = [XNLocationTool locationManager].db;
         [db open];
         if (![db open]) {
@@ -161,7 +161,7 @@ typedef void(^LocationError)(NSError *error);
         
     }];
     
-    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireProvinceID];
+    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireName];
 }
 
 /**
@@ -169,7 +169,7 @@ typedef void(^LocationError)(NSError *error);
  * @[@{@"ID":@"10086",@"Name":@"福建"}]
  */
 + (void)inquireAllCityInfoWithID:(NSString *)ID Result:(nonnull void (^)(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable))result{
-    NSBlockOperation *inquireProvinceID = [NSBlockOperation blockOperationWithBlock:^{
+    NSBlockOperation *inquireAllCityInfo = [NSBlockOperation blockOperationWithBlock:^{
         FMDatabase *db = [XNLocationTool locationManager].db;
         [db open];
         if (![db open]) {
@@ -189,7 +189,35 @@ typedef void(^LocationError)(NSError *error);
         
     }];
     
-    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireProvinceID];
+    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireAllCityInfo];
+}
+
+
+/**
+ * 获取所有的省
+ */
++ (void)inquireAllProvinceInfoResult:(void (^)(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable))result{
+    NSBlockOperation *inquireAllProvinceInfo = [NSBlockOperation blockOperationWithBlock:^{
+        FMDatabase *db = [XNLocationTool locationManager].db;
+        [db open];
+        if (![db open]) {
+            result(nil);
+        }
+        
+        FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE city_type = 1 ORDER BY city_id ASC"]];
+        NSMutableArray <NSDictionary<NSString *,NSString *> *>*provinceInfosArray = [[NSMutableArray alloc] initWithCapacity:[dbResult columnCount]];
+        
+        while ([dbResult next]) {
+            NSDictionary *cityInfo = @{@"ID":[dbResult stringForColumn:@"city_id"],
+                                       @"Name":[dbResult stringForColumn:@"city_name"]};
+            [provinceInfosArray addObject:cityInfo];
+        }
+        
+        result(provinceInfosArray);
+        
+    }];
+    
+    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireAllProvinceInfo];
 }
 
 @end

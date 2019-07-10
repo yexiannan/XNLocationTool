@@ -27,6 +27,10 @@
         NSLog(@"error = %@",error);
     }];
     
+    [XNLocationTool inquireAllProvinceInfoResult:^(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable resultInfos) {
+        NSLog(@"-----AllProvince = %@",resultInfos);
+    }];
+    
     [XNLocationTool inquireIDWithName:@"福建" Result:^(NSString * _Nullable ID) {
         
         [XNLocationTool inquireAllCityInfoWithID:ID Result:^(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable resultInfos) {
@@ -36,6 +40,8 @@
         }];
         
     }];
+    
+    
     
 }
 

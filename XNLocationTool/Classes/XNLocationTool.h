@@ -33,6 +33,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)inquireAllCityInfoWithID:(NSString *)ID Result:(void (^)(NSArray <NSDictionary <NSString *,NSString *>*>* _Nullable resultInfos))result;
 
+/**
+ * 获取所有的省
+ */
++ (void)inquireAllProvinceInfoResult:(void (^)(NSArray <NSDictionary <NSString *,NSString *>*>* _Nullable resultInfos))result;
+
 @end
 
 NS_ASSUME_NONNULL_END
