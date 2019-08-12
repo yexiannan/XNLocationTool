@@ -46,13 +46,15 @@ typedef void(^LocationError)(NSError *error);
     return shareInstance;
 }
 
-- (void)initWithLongitude:(double)longitude Latitude:(double)latitude ProvinceName:(nonnull NSString *)provinceName ProvinceID:(nonnull NSString *)provinceID CityName:(nonnull NSString *)cityName CityID:(nonnull NSString *)cityID {
+- (void)initWithLongitude:(double)longitude Latitude:(double)latitude ProvinceName:(nonnull NSString *)provinceName ProvinceID:(nonnull NSString *)provinceID CityName:(nonnull NSString *)cityName CityID:(nonnull NSString *)cityID AreaName:(nonnull NSString *)areaName AreaID:(nonnull NSString *)areaID{
     self.longitude = longitude;
     self.latitude = latitude;
     self.provinceName = provinceName;
     self.provinceID = provinceID;
     self.cityName = cityName;
     self.cityID = cityID;
+    self.areaName = areaName;
+    self.areaID = areaID;
 }
 
 #pragma mark - 定位
