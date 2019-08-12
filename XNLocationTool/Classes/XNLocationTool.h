@@ -26,11 +26,13 @@ NS_ASSUME_NONNULL_BEGIN
  * 设置默认位置
  */
 - (void)initWithLongitude:(double)longitude
-                         Latitude:(double)latitude
-                     ProvinceName:(NSString *)provinceName
-                       ProvinceID:(NSString *)provinceID
-                         CityName:(NSString *)cityName
-                           CityID:(NSString *)cityID;
+                 Latitude:(double)latitude
+             ProvinceName:(NSString *)provinceName
+               ProvinceID:(NSString *)provinceID
+                 CityName:(NSString *)cityName
+                   CityID:(NSString *)cityID
+                 AreaName:(NSString *)areaName
+                   AreaID:(NSString *)areaID;
 /**
  * 获取当前位置信息
  */
