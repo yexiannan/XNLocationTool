@@ -95,14 +95,14 @@ typedef void(^LocationError)(NSError *error);
         //针对数据库信息作处理以方便筛选
         NSString *provinceName = [placemark.administrativeArea stringByReplacingOccurrencesOfString:@"省" withString:@""];
         NSString *cityName = [placemark.locality stringByReplacingOccurrencesOfString:@"市" withString:@""];
-        NSString *areaName = [placemark.subLocality stringByReplacingOccurrencesOfString:@"区" withString:@""];
+        NSString *areaName = placemark.subLocality;
 
         //获取省市区ID
-        [XNLocationTool inquireIDWithName:provinceName Result:^(NSString * _Nullable ID) {
+        [XNLocationTool inquireIDWithName:provinceName TableName:@"city" Result:^(NSString * _Nullable ID) {
             NSString *provinceID = ID;
-            [XNLocationTool inquireIDWithName:cityName Result:^(NSString * _Nullable ID) {
+            [XNLocationTool inquireIDWithName:cityName TableName:@"city" Result:^(NSString * _Nullable ID) {
                 NSString *cityID = ID;
-                [XNLocationTool inquireIDWithName:areaName Result:^(NSString * _Nullable ID) {
+                [XNLocationTool inquireIDWithName:areaName TableName:@"city_zone" Result:^(NSString * _Nullable ID) {
                     NSString *areaID = ID;
                     
                     self.result(coordinate.longitude, coordinate.latitude, provinceName, provinceID, cityName, cityID, areaName, areaID);
@@ -123,7 +123,7 @@ typedef void(^LocationError)(NSError *error);
 /**
  * 根据名称查询ID
  */
-+ (void)inquireIDWithName:(NSString *)name Result:(void (^)(NSString * _Nullable))result{
++ (void)inquireIDWithName:(NSString *)name TableName:(NSString *)tableName Result:(void (^)(NSString * _Nullable))result{
     NSBlockOperation *inquireID = [NSBlockOperation blockOperationWithBlock:^{
         FMDatabase *db = [XNLocationTool locationManager].db;
         [db open];
@@ -133,12 +133,28 @@ typedef void(^LocationError)(NSError *error);
 
         NSString *cityID;
 
-        FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE city_name LIKE '%@'",name]];
         
-        while ([dbResult next]) {
-            cityID = [NSString stringWithFormat:@"%d",[dbResult intForColumn:@"city_id"]];
-        }
+        
+        
+        if ([tableName isEqualToString:@"city"]) {
+            
+            FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE city_name LIKE '%@'",name]];
 
+            while ([dbResult next]) {
+                cityID = [NSString stringWithFormat:@"%d",[dbResult intForColumn:@"city_id"]];
+            }
+            
+        } else {
+            
+            FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city_zone' WHERE name LIKE '%@%%'",name]];
+            
+            while ([dbResult next]) {
+                cityID = [NSString stringWithFormat:@"%d",[dbResult intForColumn:@"id"]];
+            }
+            
+        }
+        
+        
         result(cityID);
 
     }];
@@ -149,7 +165,7 @@ typedef void(^LocationError)(NSError *error);
 /**
  * 根据ID查询Name
  */
-+ (void)inquireNameWithID:(NSString *)ID Result:(void (^)(NSString * _Nullable Name))result{
++ (void)inquireNameWithID:(NSString *)ID TableName:(NSString *)tableName Result:(void (^)(NSString * _Nullable Name))result{
     NSBlockOperation *inquireName = [NSBlockOperation blockOperationWithBlock:^{
         FMDatabase *db = [XNLocationTool locationManager].db;
         [db open];
@@ -159,11 +175,24 @@ typedef void(^LocationError)(NSError *error);
         
         NSString *cityName;
         
-        FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE city_id LIKE '%@'",ID]];
-
-        while ([dbResult next]) {
-            cityName = [NSString stringWithFormat:@"%d",[dbResult intForColumn:@"city_name"]];
+        if ([tableName isEqualToString:@"city"]) {
+            
+            FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE city_id LIKE '%@'",ID]];
+            
+            while ([dbResult next]) {
+                cityName = [NSString stringWithFormat:@"%d",[dbResult intForColumn:@"city_name"]];
+            }
+            
+        } else {
+            
+            FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city_zone' WHERE id LIKE '%@'",ID]];
+            
+            while ([dbResult next]) {
+                cityName = [NSString stringWithFormat:@"%d",[dbResult intForColumn:@"city_name"]];
+            }
+            
         }
+        
         
         result(cityName);
         
@@ -173,10 +202,48 @@ typedef void(^LocationError)(NSError *error);
 }
 
 /**
+ * 根据市ID查询市下所有的区
+ * @[@{@"ID":@"350211",@"Name":@"集美区"}]
+ */
++ (void)inquireAllAreaInfoWithCityID:(NSString *)cityID Result:(nonnull void (^)(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable))result {
+    NSBlockOperation *inquireAllAreaInfo = [NSBlockOperation blockOperationWithBlock:^{
+        FMDatabase *db = [XNLocationTool locationManager].db;
+        [db open];
+        if (![db open]) {
+            result(nil);
+        }
+        
+        //1.根据cityID查询StandardCode
+        NSString *cityStandardCode;
+        FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE city_id = '%@'",cityID]];
+        while ([dbResult next]) {
+            cityStandardCode = [NSString stringWithFormat:@"%lld",[dbResult longLongIntForColumn:@"standard_code"]];
+        }
+        
+        
+        //2.根据市StandardCode查询辖区信息
+        dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city_zone' WHERE pid = '%@' ORDER BY id ASC",cityStandardCode]];
+        
+        NSMutableArray <NSDictionary<NSString *,NSString *> *>*areaInfosArray = [[NSMutableArray alloc] initWithCapacity:[dbResult columnCount]];
+        
+        while ([dbResult next]) {
+            NSDictionary *areaInfo = @{@"ID":[dbResult stringForColumn:@"id"],
+                                       @"Name":[dbResult stringForColumn:@"name"]};
+            [areaInfosArray addObject:areaInfo];
+        }
+        
+        result(areaInfosArray);
+        
+    }];
+    
+    [[XNLocationTool locationManager].inquireLocationQueue addOperation:inquireAllAreaInfo];
+}
+
+/**
  * 根据省ID查询辖区下所有市
  * @[@{@"ID":@"10086",@"Name":@"福建"}]
  */
-+ (void)inquireAllCityInfoWithID:(NSString *)ID Result:(nonnull void (^)(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable))result{
++ (void)inquireAllCityInfoWithProvinceID:(NSString *)provinceID Result:(nonnull void (^)(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable))result {
     NSBlockOperation *inquireAllCityInfo = [NSBlockOperation blockOperationWithBlock:^{
         FMDatabase *db = [XNLocationTool locationManager].db;
         [db open];
@@ -184,7 +251,7 @@ typedef void(^LocationError)(NSError *error);
             result(nil);
         }
         
-        FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE parent_id = '%@' ORDER BY city_id ASC",ID]];
+        FMResultSet *dbResult = [db executeQuery:[NSString stringWithFormat:@"select * from 'city' WHERE parent_id = '%@' ORDER BY city_id ASC",provinceID]];
         NSMutableArray <NSDictionary<NSString *,NSString *> *>*cityInfosArray = [[NSMutableArray alloc] initWithCapacity:[dbResult columnCount]];
 
         while ([dbResult next]) {

@@ -41,17 +41,23 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 根据Name查询ID
  */
-+ (void)inquireIDWithName:(NSString *)name Result:(void (^)(NSString * _Nullable ID))result;
++ (void)inquireIDWithName:(NSString *)name TableName:(NSString *)tableName Result:(void (^)(NSString * _Nullable ID))result;
 /**
  * 根据ID查询Name
  */
-+ (void)inquireNameWithID:(NSString *)ID Result:(void (^)(NSString * _Nullable Name))result;
++ (void)inquireNameWithID:(NSString *)ID TableName:(NSString *)tableName Result:(void (^)(NSString * _Nullable Name))result;
+
+/**
+ * 根据市ID查询市下所有的区
+ * @[@{@"ID":@"350211",@"Name":@"集美区"}]
+ */
++ (void)inquireAllAreaInfoWithCityID:(NSString *)cityID Result:(void (^)(NSArray <NSDictionary <NSString *,NSString *>*>* _Nullable resultInfos))result;
 
 /**
  * 根据省ID查询辖区下所有市
  * @[@{@"ID":@"10086",@"Name":@"福建"}]
  */
-+ (void)inquireAllCityInfoWithID:(NSString *)ID Result:(void (^)(NSArray <NSDictionary <NSString *,NSString *>*>* _Nullable resultInfos))result;
++ (void)inquireAllCityInfoWithProvinceID:(NSString *)provinceID Result:(void (^)(NSArray <NSDictionary <NSString *,NSString *>*>* _Nullable resultInfos))result;
 
 /**
  * 获取所有的省

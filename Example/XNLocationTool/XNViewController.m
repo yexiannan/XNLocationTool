@@ -31,9 +31,9 @@
         NSLog(@"-----AllProvince = %@",resultInfos);
     }];
     
-    [XNLocationTool inquireIDWithName:@"福建" Result:^(NSString * _Nullable ID) {
+    [XNLocationTool inquireIDWithName:@"福建" TableName:@"city" Result:^(NSString * _Nullable ID) {
         
-        [XNLocationTool inquireAllCityInfoWithID:ID Result:^(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable resultInfos) {
+        [XNLocationTool inquireAllCityInfoWithProvinceID:ID Result:^(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable resultInfos) {
             
             NSLog(@"-----resultInfo = %@",resultInfos);
             
@@ -41,6 +41,10 @@
         
     }];
     
+    [XNLocationTool inquireAllAreaInfoWithCityID:@"90080" Result:^(NSArray<NSDictionary<NSString *,NSString *> *> * _Nullable resultInfos) {
+        NSLog(@"-----AllAreaInfo = %@",resultInfos);
+
+    }];
     
     
 }
