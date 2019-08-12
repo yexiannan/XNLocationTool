@@ -80,7 +80,7 @@
 		029F47CCEE5A0AAA15612D9850A24F94 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
 		11073F3E4EA350BACDC7E9116B742B2B /* Pods-XNLocationTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XNLocationTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1414600AD2061270AE2F7ACD80A49A09 /* Pods-XNLocationTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XNLocationTool_Tests.modulemap"; sourceTree = "<group>"; };
-		1A1F61535103453AE64C13D4109FE562 /* lianlianche.db */ = {isa = PBXFileReference; includeInIndex = 1; name = lianlianche.db; path = XNLocationTool/Assets/lianlianche.db; sourceTree = "<group>"; };
+		1A1F61535103453AE64C13D4109FE562 /* lianlianche.db */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = lianlianche.db; path = XNLocationTool/Assets/lianlianche.db; sourceTree = "<group>"; };
 		1E7B1D193E0F3B8D5779447CE90753AF /* XNLocationTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XNLocationTool.h; path = XNLocationTool/Classes/XNLocationTool.h; sourceTree = "<group>"; };
 		244998FA62E9CA971C9C8C51ED474D25 /* Pods-XNLocationTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XNLocationTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2B8F1DD8F195F8BD6757E039138B92D9 /* Pods-XNLocationTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XNLocationTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		36BF48738AEE86CF909EB9645CC1256F /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		3765437AC1538003589142E20AD92494 /* Pods-XNLocationTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XNLocationTool_Example.modulemap"; sourceTree = "<group>"; };
 		3C4BE59E08CD2A27EA0E05B074F7D67A /* XNLocationTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XNLocationTool.xcconfig; sourceTree = "<group>"; };
-		3D890508565A285D7B1EEF994803D2C1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3D890508565A285D7B1EEF994803D2C1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3F5E9BCEF8B2A062C716A73292CFCC83 /* Pods-XNLocationTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XNLocationTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		41B8BDA5F2528D6BA445FE29FFEC9976 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		48C23FF69A4E4C997589FC1276678ADC /* Pods-XNLocationTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XNLocationTool_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		70491040C0DE1C5A8FA0C9378C66C4FE /* XNLocationTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XNLocationTool-umbrella.h"; sourceTree = "<group>"; };
 		7109ED3313ED538148DC6BEA7354A6A4 /* XNLocationTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XNLocationTool-prefix.pch"; sourceTree = "<group>"; };
 		71A1B57CDFAEF1266F62D4A291DC7B9D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		72A4F0C1BAD4E0128EC5C703D0C861E8 /* XNLocationTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XNLocationTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		72A4F0C1BAD4E0128EC5C703D0C861E8 /* XNLocationTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XNLocationTool.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		72C6B69D859A510178BDFDB5CEA9A304 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC5E47258BD77AC547A4276778F1D5D /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
 		7BF545286574ADB3F373E98036A953B9 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
@@ -114,24 +114,24 @@
 		8BF14EA62BE371202295E8C08CCC1207 /* FMDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMDB-Info.plist"; sourceTree = "<group>"; };
 		8D2C5B1A7AD088F54DF9ADA31E4D1024 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
 		9A403596C092A189B80E9351779DEF0A /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D49184DDA04D2ADF0001F705225E29 /* Pods-XNLocationTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XNLocationTool_Example-Info.plist"; sourceTree = "<group>"; };
 		A4EF1AB57E1694852611025996270220 /* Pods-XNLocationTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XNLocationTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B3D02EF425E88BD0544AC281E9D889A4 /* XNLocationTool.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XNLocationTool.bundle; path = "XNLocationTool-XNLocationTool.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8F20F8765603EC04BD298DCE8CAE37C /* Pods_XNLocationTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XNLocationTool_Example.framework; path = "Pods-XNLocationTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B95786BC54435BE627F3491075685C39 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B3D02EF425E88BD0544AC281E9D889A4 /* XNLocationTool.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XNLocationTool.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F20F8765603EC04BD298DCE8CAE37C /* Pods_XNLocationTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XNLocationTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B95786BC54435BE627F3491075685C39 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B9B8CA3808B7CE3232517EF4120A873C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BB6E5AE7C9FAA329DA3A75719E72CD67 /* Pods-XNLocationTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XNLocationTool_Example-umbrella.h"; sourceTree = "<group>"; };
 		C6A97531656805D3F152A15FBFEFB728 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
 		C7D21289334DE63899088C52BD4B3E73 /* Pods-XNLocationTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XNLocationTool_Example-dummy.m"; sourceTree = "<group>"; };
 		D12ACAC83CE97EF9E2447A67A2237356 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
-		D53B0A1FB814606B86F0F419C730E144 /* Pods_XNLocationTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XNLocationTool_Tests.framework; path = "Pods-XNLocationTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53B0A1FB814606B86F0F419C730E144 /* Pods_XNLocationTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XNLocationTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E173EA81E2FF09192C1354B73CCF50C3 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		E253B7578D44446D5806AC1901CBDD45 /* XNLocationTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XNLocationTool-Info.plist"; sourceTree = "<group>"; };
 		EAAA922EA24F85E132533982DE8D4A7B /* Pods-XNLocationTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XNLocationTool_Tests-dummy.m"; sourceTree = "<group>"; };
 		F2750A0CD5EDD8F75CF0C07E8CD8CD8C /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		F67650A1CA7AAD5145C257B66D641CF7 /* XNLocationTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XNLocationTool.framework; path = XNLocationTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67650A1CA7AAD5145C257B66D641CF7 /* XNLocationTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XNLocationTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABCBC9E837333AE767C640FD30D6099 /* Pods-XNLocationTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XNLocationTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,7 +336,6 @@
 				224EB198F2A024DBA4D91638256EC04A /* standard */,
 				59ABEB310529AD623E91215F00AFE808 /* Support Files */,
 			);
-			name = FMDB;
 			path = FMDB;
 			sourceTree = "<group>";
 		};
@@ -521,6 +520,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -712,8 +712,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

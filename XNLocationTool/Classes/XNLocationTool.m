@@ -14,9 +14,6 @@ typedef void(^LocationResult)(double longitude, double latitude, NSString *provi
 
 typedef void(^LocationError)(NSError *error);
 
-typedef void(^LocationError)(NSError *error);
-
-
 @interface XNLocationTool ()<CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager* locationManager;
 @property (nonatomic, copy) LocationResult result;
@@ -47,6 +44,15 @@ typedef void(^LocationError)(NSError *error);
         shareInstance.db = [FMDatabase databaseWithPath:dbFilePath];
     });
     return shareInstance;
+}
+
+- (void)initWithLongitude:(double)longitude Latitude:(double)latitude ProvinceName:(nonnull NSString *)provinceName ProvinceID:(nonnull NSString *)provinceID CityName:(nonnull NSString *)cityName CityID:(nonnull NSString *)cityID {
+    self.longitude = longitude;
+    self.latitude = latitude;
+    self.provinceName = provinceName;
+    self.provinceID = provinceID;
+    self.cityName = cityName;
+    self.cityID = cityID;
 }
 
 #pragma mark - 定位

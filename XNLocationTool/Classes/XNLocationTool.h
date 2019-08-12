@@ -11,8 +11,26 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XNLocationTool : NSObject
-+ (XNLocationTool *)locationManager;
+@property (nonatomic, assign) double longitude;
+@property (nonatomic, assign) double latitude;
+@property (nonatomic, copy) NSString *provinceName;
+@property (nonatomic, copy) NSString *provinceID;
+@property (nonatomic, copy) NSString *cityName;
+@property (nonatomic, copy) NSString *cityID;
+@property (nonatomic, copy) NSString *areaName;
+@property (nonatomic, copy) NSString *areaID;
 
+
++ (XNLocationTool *)locationManager;
+/**
+ * 设置默认位置
+ */
+- (void)initWithLongitude:(double)longitude
+                         Latitude:(double)latitude
+                     ProvinceName:(NSString *)provinceName
+                       ProvinceID:(NSString *)provinceID
+                         CityName:(NSString *)cityName
+                           CityID:(NSString *)cityID;
 /**
  * 获取当前位置信息
  */
